@@ -54,11 +54,19 @@
 }
 
 /*=============== BREAKPOINTS ===============*/
+/* For really large devices */
+@media screen and (max-width: 1080px) {
+    .skills__container {
+        margin-left: 15%;
+    }
+}
+
 /* For large devices */
 @media screen and (max-width: 992px) {
     .skills__container {
         grid-template-columns: max-content;
         row-gap: 2rem;
+        margin-left: 25%;
     }
 }
 
@@ -66,6 +74,7 @@
 @media screen and (max-width: 576px) {
     .skills__container {
         grid-template-columns: 1fr;
+        margin-left: 0%;
     }
 
     .skills__content {
