@@ -65,7 +65,7 @@ function Projects() {
                   <i className="uil uil-check-circle projects__modal-icon"></i>
 
                   <p className="projects__modal-info">
-                    During the development of BURS' first mobile application, I
+                    During the development of Botswana Unified Revenue Services' (BURS') first mobile application, I
                     worked as a fullstack developer developing the frontend
                     using Android Studio.
                   </p>
@@ -202,9 +202,9 @@ function Projects() {
                   <i className="uil uil-check-circle projects__modal-icon"></i>
 
                   <p className="projects__modal-info">
-                    Developed a module that would allow customers to log tickets
-                    on incidents, queries or compliments. This website was built
-                    in React and I handled both backend and frontend.
+                    Developed an website application that would allow customers to log tickets
+                    on incidents, queries or compliments. The webapp was built
+                    using React as the frontend and Spring Boot for the backend with MySQL as the database.
                   </p>
 
                 </li>
@@ -214,7 +214,7 @@ function Projects() {
                   <i className="uil uil-check-circle projects__modal-icon"></i>
 
                   <p className="projects__modal-info">
-                    Developed BURS first Android application using Android
+                    Developed Botswana Unified Revenue Services' (BURS') first Android application using Android
                     Studio in Java, Retrofit and SPRING framework, REST
                     webservices.
                   </p>
@@ -292,7 +292,7 @@ function Projects() {
                   <i className="uil uil-check-circle projects__modal-icon"></i>
 
                   <p className="projects__modal-info">
-                    During the development of BURS' first mobile application, I
+                    During the development of Botswana Unified Revenue Services' (BURS') first mobile application, I
                     worked as a fullstack developer creating both the SQL
                     queries and API.
                   </p>

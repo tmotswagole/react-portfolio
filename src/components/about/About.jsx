@@ -50,7 +50,7 @@ function About() {
 
                 <p className="about__description">
 
-                Fullstack developer, I have 5+ years experience in software development in a variety of stacks. Technologies such as Java, SPRING BOOT, SQL, Oracle 11g, MySQL, Python, React and so on. I also have some experience in server management of Linux and Unix. I also have some experience in Database maintanace, scheduling and event creation.
+                As a Fullstack developer, I have 6+ years experience in software development in a variety of stacks. Technologies such as Java, SPRING BOOT, SQL, Oracle 11g, MySQL, Python, React and so on. I also have done some server management of Linux and Unix servers. I have previous work experience in Database maintenace, scheduling and event creation.
 
                 </p>
 
