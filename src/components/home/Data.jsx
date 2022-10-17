@@ -1,12 +1,38 @@
-import React from 'react';
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import React, { useRef, useEffect } from 'react';
+// import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Data = () => {
 
-  const { text } = useTypewriter({
-    words: ["Fullstack Developer", "Java Developer", "Backend Developer", "Frontend Developer"],
-    loop: 0
-  });
+  // const { text } = useTypewriter({
+  //   words: ["Fullstack Developer", "Java Developer", "Backend Developer", "Frontend Developer"],
+  //   loop: 0
+  // });
+  const buttonRef = useRef();
+
+    useEffect(() => {
+        const applyContainerProperties = () => {
+            buttonRef.current.classList.add("effect-container");
+        };
+
+        const onClick = () => {
+            buttonRef.current.classList.remove("active");
+            setTimeout(() => {
+                buttonRef.current.classList.add("active");
+            }, 1);
+        }
+
+        applyContainerProperties();
+
+        // Add the event listener on mount
+        buttonRef.current.addEventListener("mousedown", onClick);
+
+        // Needed for referencing the ref in the return function
+        const cleanupRef = buttonRef.current;
+
+        return () => {
+            cleanupRef.removeEventListener("mousedown", onClick);
+        }
+    });
 
   return (
     <div className="home__data">
@@ -23,7 +49,7 @@ const Data = () => {
 
         <p className="home__description">A talented software developer experienced in building, deploying, maintaining, and updating large scale systems in various sectors. A multifaceted developer, knowledgeable in Java, SQL, React, Spring Boot, TensorFlow and Python.</p>
 
-        <a href="#contact" className="button button--flex">
+        <a href="#contact" ref={buttonRef} className="button button--flex">
 
             Come Say Hi!
 

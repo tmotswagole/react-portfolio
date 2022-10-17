@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/Thabiso+Motswagole+CV.pdf";
@@ -6,6 +6,34 @@ import Info from "./Info";
 import Tilt from 'react-tilt';
 
 function About() {
+
+    const buttonRef = useRef();
+
+    useEffect(() => {
+        const applyContainerProperties = () => {
+            buttonRef.current.classList.add("effect-container");
+        };
+
+        const onClick = () => {
+            buttonRef.current.classList.remove("active");
+            setTimeout(() => {
+                buttonRef.current.classList.add("active");
+            }, 1);
+        }
+
+        applyContainerProperties();
+
+        // Add the event listener on mount
+        buttonRef.current.addEventListener("mousedown", onClick);
+
+        // Needed for referencing the ref in the return function
+        const cleanupRef = buttonRef.current;
+
+        return () => {
+            cleanupRef.removeEventListener("mousedown", onClick);
+        }
+    });
+
   return (
     <section className="about section" id="about">
         
@@ -26,7 +54,7 @@ function About() {
 
                 </p>
 
-                <a download="" href={CV} className="button button--flex">
+                <a download="" ref={buttonRef} href={CV} className="button button--flex" target="_blank" rel="noreferrer">
                     
                     Download CV
 
