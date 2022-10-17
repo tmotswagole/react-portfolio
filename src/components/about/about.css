@@ -5,9 +5,13 @@
 }
 
 .about__img {
+    transform-style: preserve-3d;
     width: 350px;
     border-radius: 1.5rem;
     justify-self: center;
+    -webkit-box-shadow: 35px 35px 17px 0px rgba(199,199,199,0.71);
+    -moz-box-shadow: 35px 35px 17px 0px rgba(199,199,199,0.71);
+    box-shadow: 35px 35px 17px 0px rgba(199,199,199,0.71);
 }
 
 .about__info {

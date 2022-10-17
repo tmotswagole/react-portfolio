@@ -3,6 +3,7 @@ import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/Thabiso+Motswagole+CV.pdf";
 import Info from "./Info";
+import Tilt from 'react-tilt';
 
 function About() {
   return (
@@ -12,9 +13,9 @@ function About() {
         <span className="section__subtitle">My Introduction</span>
 
         <div className="about__container container grid">
-
-            <img src={AboutImg} alt="" className="about__img" />
-
+            <Tilt className="Tilt" options={{ max : 25 }} >
+                <img src={AboutImg} alt="" className="about__img" />
+            </Tilt>
             <div className="about__data">
 
                 <Info />

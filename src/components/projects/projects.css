@@ -57,6 +57,31 @@
     opacity: 0;
     visibility: hidden;
     transition: 0.3s;
+    animation-name: grow-box;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes projects_modal {
+    0% {
+        opacity: 0.2;
+    }
+
+    25% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 0.9;
+    }
 }
 
 .projects__modal-content {

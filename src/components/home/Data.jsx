@@ -1,16 +1,25 @@
 import React from 'react';
-// import './Data.css';
-// import sendSVG from './../../../../assets/send.svg';
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Data = () => {
+
+  const { text } = useTypewriter({
+    words: ["Fullstack Developer", "Java Developer", "Backend Developer", "Frontend Developer"],
+    loop: 0
+  });
+
   return (
     <div className="home__data">
 
         <h1 className="home__title">Thabiso Motswagole
 
         </h1>
-
-        <h3 className="home__subtitle">Full-Stack Developer</h3>
+        
+        <h3 className="home__subtitle">Fullstack Developer</h3>
+        {/* <span className="typing-effect text-danger">
+          <h3 className="home__subtitle">{text}</h3>
+          <Cursor cursorStyle="_" />
+        </span> */}
 
         <p className="home__description">A talented software developer experienced in building, deploying, maintaining, and updating large scale systems in various sectors. A multifaceted developer, knowledgeable in Java, SQL, React, Spring Boot, TensorFlow and Python.</p>
 

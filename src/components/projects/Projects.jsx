@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./projects.css";
 
 function Projects() {
@@ -8,6 +8,16 @@ function Projects() {
     const toggleTab = (index) => {
         setToggleState(index);
     }
+
+    useEffect(() => {
+
+      let handler = () => {
+        setToggleState(0);
+      }
+
+      document.addEventListener("mousedown", handler);
+
+    })
 
   return (
     <section className="projects section" id="projects">
