@@ -4,6 +4,7 @@ import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/Thabiso+Motswagole+CV.pdf";
 import Info from "./Info";
 import Tilt from 'react-tilt';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function About() {
 
@@ -42,7 +43,12 @@ function About() {
 
         <div className="about__container container grid">
             <Tilt className="Tilt" options={{ max : 25 }} >
-                <img src={AboutImg} alt="" className="about__img" />
+                {/* <img src={AboutImg} alt="" loading="lazy" className="about__img" /> */}
+                <LazyLoadImage
+                alt="about.jpg"
+                effect="blur"
+                className="about__img"
+                src={AboutImg} />
             </Tilt>
             <div className="about__data">
 
