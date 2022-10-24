@@ -169,6 +169,54 @@ img {
   align-items: center;
 }
 
+/*=============== BACKGROUND BUBBLES ===============*/
+
+.bubbles {
+  position: relative;
+  display: flex;
+  z-index: -1;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+}
+
+.bubbles span {
+  width: 30px;
+  height: 30px;
+  background: #eee8aa;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #EEE1C6,
+  0 0 50px #daa520,
+  0 0 100px #ffd700;
+  animation: animate 17s linear infinite;
+  animation-duration: calc(125s / var(--i));
+}
+
+.bubbles span:nth-child(even) {
+  background: #eee8aa;
+  box-shadow: 0 0 0 10px #e6be8a,
+  0 0 50px #ffcc33,
+  0 0 100px #ffdf00;
+}
+
+.bubbles span:nth-child(3n+0) {
+  background: #eee8aa;
+  box-shadow: 0 0 0 10px #e6be8a,
+  0 0 50px #ffcc33,
+  0 0 100px #ffdf00;
+}
+
+@keyframes animate {
+  0% {
+      transform: translateY(100vh) scale(0);
+  }
+
+  100% {
+      transform: translateY(-10vh) scale(1);
+  }
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -184,6 +232,12 @@ img {
   .button__icon {
     width: 22px;
     height: 22px;
+  }
+
+  .bubbles span {
+    width: 5px;
+    height: 5px;
+    border-radius: 80%;
   }
 }
 
@@ -214,5 +268,11 @@ img {
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
+  }
+
+  .bubbles span {
+    width: 5px;
+    height: 5px;
+    border-radius: 80%;
   }
 }
