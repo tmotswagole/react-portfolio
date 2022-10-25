@@ -1,7 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*=============== PLAYFAIR DISPLAY FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
@@ -17,8 +17,8 @@
   --container-color: #fff;
 
   /*========== Font and typography ==========*/
-  /* --body-font: "Poppins", sans-serif; */
-  --body-font: 'Playfair Display', sans-serif;
+  --body-font: "Poppins", sans-serif;
+  --body-font-playful: 'Playfair Display', sans-serif;
 
   /*.5rem = 8px | 1rem = 16px ...*/
   --big-font-size: 3.5rem;

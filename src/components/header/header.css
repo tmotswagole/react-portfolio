@@ -6,6 +6,8 @@
     z-index: var(--z fixed);
     background-color: var(--body-color);
     z-index:1;
+    font-family: var(--body-font-playful);
+    font-weight: bold;
 }
 
 .nav {
@@ -20,6 +22,8 @@
 .nav__toggle {
     color: var(--title-color);
     font-weight: va(--font-medium);
+    font-family: var(--body-font-playful);
+    font-weight: bold;
 }
 
 .nav__list {
