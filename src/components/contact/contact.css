@@ -1,3 +1,7 @@
+.contact section {
+    z-index: -1;
+}
+
 .contact__container {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;

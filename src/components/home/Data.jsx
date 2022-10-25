@@ -1,12 +1,12 @@
 import React, { useRef, useEffect } from 'react';
-// import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
 
 const Data = () => {
 
-  // const { text } = useTypewriter({
-  //   words: ["Fullstack Developer", "Java Developer", "Backend Developer", "Frontend Developer"],
-  //   loop: 0
-  // });
+  const { text } = useTypewriter({
+    words: ["FULLSTACK DEVELOPER", "JAVA DEVELOPER", "BACKEND DEVELOPER", "FRONTEND DEVELOPER"],
+    loop: 0
+  });
   const buttonRef = useRef();
 
     useEffect(() => {
@@ -41,11 +41,27 @@ const Data = () => {
 
         </h1>
         
-        <h3 className="home__subtitle">Fullstack Developer</h3>
-        {/* <span className="typing-effect text-danger">
-          <h3 className="home__subtitle">{text}</h3>
-          <Cursor cursorStyle="_" />
-        </span> */}
+        {/* <h3 className="home__subtitle">Fullstack Developer</h3> */}
+        <div className="col col-lg-6 col-12 hero-text flexy">
+          <div>
+            I am a {' '}
+            <span className="typing-effect text-danger">
+              {/* {text}
+              <Cursor cursorStyle="_" /> */}
+              <Typewriter
+                words={["Fullstack Developer", "Java Developer", "Backend Developer", "Frontend Developer"]}
+                loop={0}
+                cursor
+                cursorStyle='_'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
+            </span>
+          </div>
+        </div>
+        
+        <br />
 
         <p className="home__description">A talented software developer experienced in building, deploying, maintaining, and updating large scale systems in various sectors. A multifaceted developer, knowledgeable in Java, SQL, React, Spring Boot, TensorFlow and Python.</p>
 
