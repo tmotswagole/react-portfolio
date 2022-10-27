@@ -15,7 +15,7 @@ function App() {{
     <>
       <Header />
 
-      <div className='bubbles'>
+      {/* <div className='bubbles'>
         <span style={{ '--i': "11" }}></span>
         <span style={{ '--i': "12" }}></span>
         <span style={{ '--i': "24" }}></span>
@@ -76,7 +76,7 @@ function App() {{
         <span style={{ '--i': "17" }}></span>
         <span style={{ '--i': "13" }}></span>
         <span style={{ '--i': "28" }}></span>
-      </div>
+      </div> */}
 
       <main className='main'>
         <Home />
