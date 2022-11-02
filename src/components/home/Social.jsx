@@ -17,6 +17,12 @@ const Social = () => {
 
         </a>
 
+        <a href="https://www.instagram.com/rethabiso/" className="home__social-icon" target="_blank" rel="noreferrer">
+
+            <i className="uil uil-instagram"></i>
+
+        </a>
+
         {/* <a href="" className="home__social-icon" target="_blank"></a> */}
 
     </div>

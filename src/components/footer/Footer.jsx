@@ -51,6 +51,12 @@ function Footer() {
 
                 </a>
 
+                <a href="https://www.instagram.com/rethabiso/" className="footer__social-link" target="_blank" rel="noreferrer">
+
+                    <i className="uil uil-instagram"></i>
+
+                </a>
+
             </div>
 
             <span className="footer__copy">&#169; Copyright. All rigths reserved</span>
