@@ -37,6 +37,8 @@ function Footer() {
 
             </ul>
 
+            {/*============================= Socials =============================*/}
+
             <div className="footer__social">
 
                 <a href="https://www.linkedin.com/in/thabiso-solomon-motswagole/" className="footer__social-link" target="_blank" rel="noreferrer">
