@@ -44,7 +44,7 @@ function Contact() {
                         <h3 className="contact__card-title">Instagram</h3>
                         <span className="contact__card-data">@rethabiso</span>
 
-                        <a href="https://www.instagram.com/rethabiso/" target="_blank" className="contact__button" rel="noreferrer">App me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        <a href="https://www.instagram.com/rethabiso" target="_blank" className="contact__button" rel="noreferrer">App me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
 
                     </div>
 
