@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "./contact.css";
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+    const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_nml8ezt', 'template_1fuqzhk', form.current, 'GQNHyO4GXJWQGx1kJ')
+    e.target.reset();
+  };
+
   return (
     <section className="contact section" id="contact">
 
@@ -21,20 +31,20 @@ function Contact() {
                         <i className="bx bx-mail-send contact__card-icon"></i>
 
                         <h3 className="contact__card-title">Email</h3>
-                        <span className="contact__card-data">example@outlook.com</span>
+                        <span className="contact__card-data">tsmotswagole@outlook.com</span>
 
-                        <a href="mailto:example@outlook.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        <a href="mailto:tsmotswagole@outlook.com" className="contact__button">Write me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
 
                     </div>
 
                     <div className="contact__card">
 
-                        <i className="bx bxl-whatsapp contact__card-icon"></i>
+                        <i className="bx bxl-instagram contact__card-icon"></i>
 
-                        <h3 className="contact__card-title">Whatsapp</h3>
-                        <span className="contact__card-data">+26774777777</span>
+                        <h3 className="contact__card-title">Instagram</h3>
+                        <span className="contact__card-data">@rethabiso</span>
 
-                        <a href="https://web.whatsapp.com" target="_blank" className="contact__button" rel="noreferrer">App me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
+                        <a href="https://www.instagram.com/rethabiso/" target="_blank" className="contact__button" rel="noreferrer">App me <i className="bx bx-right-arrow-alt contact__button-icon"></i></a>
 
                     </div>
 
@@ -46,7 +56,7 @@ function Contact() {
 
                 <h3 className="contact__content">Write me your message</h3>
 
-                <form className="contact__form">
+                <form className="contact__form" ref={form} onSubmit={sendEmail}>
 
                     <div className="contact__form-div">
 
