@@ -69,7 +69,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <i className="uil uil-tiktok"></i>
+            <i className="bx bxl-tiktok"></i>
           </a>
 
           <a
