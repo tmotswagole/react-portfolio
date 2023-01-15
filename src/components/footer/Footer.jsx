@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.css";
+import { bxTiktok } from "boxicons";
 
 function Footer() {
   return (
@@ -56,7 +57,7 @@ function Footer() {
 
           <a
             href="https://www.instagram.com/wearethabiso/"
-            className="home__social-icon"
+            className="footer__social-link"
             target="_blank"
             rel="noreferrer"
           >
@@ -65,16 +66,16 @@ function Footer() {
 
           <a
             href="https://www.tiktok.com/@wearethabiso"
-            className="home__social-icon"
+            className="footer__social-link"
             target="_blank"
             rel="noreferrer"
           >
-            <i className="bx bxl-tiktok"></i>
+            <img src={bxTiktok} alt="tiktok" className="bx bxl-tiktok"></img>
           </a>
 
           <a
             href="https://twitter.com/WeAreThabiso"
-            className="home__social-icon"
+            className="footer__social-link"
             target="_blank"
             rel="noreferrer"
           >
