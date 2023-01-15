@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import { bxTiktok } from "boxicons";
 
 function Footer() {
   return (
@@ -70,7 +69,7 @@ function Footer() {
             target="_blank"
             rel="noreferrer"
           >
-            <img src={bxTiktok} alt="tiktok" className="bx bxl-tiktok"></img>
+            <i className="bx bxl-tiktok"></i>
           </a>
 
           <a

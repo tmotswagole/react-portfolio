@@ -1,5 +1,4 @@
 import React from "react";
-import { bxTiktok } from "boxicons";
 
 const Social = () => {
   return (
@@ -37,7 +36,7 @@ const Social = () => {
         target="_blank"
         rel="noreferrer"
       >
-        <img src={bxTiktok} alt="tiktok" className="bx bxl-tiktok"></img>
+        <i className="bx bxl-tiktok"></i>
       </a>
 
       <a
