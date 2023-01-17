@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.e1a81488.css",
+    "main.js": "/react-portfolio/static/js/main.276a6467.js",
+    "static/js/787.1ed0c42c.chunk.js": "/react-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/Thabiso+Motswagole+CV.pdf": "/react-portfolio/static/media/Thabiso+Motswagole+CV.5fc88f473d2d118d0b07.pdf",
+    "static/media/profile.jpg": "/react-portfolio/static/media/profile.160e3d96d53a8b5ae364.jpg",
+    "static/media/about.jpg": "/react-portfolio/static/media/about.5ee2366555673ff6c518.jpg",
+    "index.html": "/react-portfolio/index.html",
+    "main.e1a81488.css.map": "/react-portfolio/static/css/main.e1a81488.css.map",
+    "main.276a6467.js.map": "/react-portfolio/static/js/main.276a6467.js.map",
+    "787.1ed0c42c.chunk.js.map": "/react-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1a81488.css",
+    "static/js/main.276a6467.js"
+  ]
+}
