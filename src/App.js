@@ -11,23 +11,21 @@ import Footer from "./components/footer/Footer";
 import Scrollup from "./components/scrollup/Scrollup";
 
 function App() {
-  {
-    return (
-      <>
-        <Header />
-        <main className="main">
-          <Home />
-          <About />
-          <Skills />
-          <Projects />
-          <Portfolio />
-          <Contact />
-        </main>
-        <Footer />
-        <Scrollup />
-      </>
-    );
-  }
+  return (
+    <>
+      <Header />
+      <main className="main">
+        <Home />
+        <About />
+        <Skills />
+        <Projects />
+        <Portfolio />
+        <Contact />
+      </main>
+      <Footer />
+      <Scrollup />
+    </>
+  );
 }
 
 export default App;
